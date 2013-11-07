@@ -21,8 +21,29 @@
 
 <?php
 	$custom_crumbs['Arts and Sciences'] = "http://artsandsciences.osu.edu/";
-	require_once(path_to_theme() . "/navbar/osu-navbar-b-custom.php");
 ?>
+
+	<div id="osu_navbar" role="navigation">
+			<div class="container">
+				<h2 class="osu-semantic">Ohio State nav bar</h2>
+			<a href="#page-content" id="skip" class="osu-semantic">Skip to main content</a>
+				<div class="univ_info">
+					<p class="univ_name"><a href="http://osu.edu" title="The Ohio State University">The Ohio State University</a></p>
+				</div><!-- /univ_info -->
+				<div class="univ_links">
+					<div class="links">
+						<ul>
+							<li><a href="http://www.osu.edu/help.php" class="help">Help</a></li>
+							<li><a href="http://buckeyelink.osu.edu/" class="buckeyelink" >BuckeyeLink</a></li>
+							<li><a href="http://www.osu.edu/map/" class="map">Map</a></li>
+							<li><a href="http://www.osu.edu/findpeople.php" class="findpeople">Find People</a></li>
+							<li><a href="https://email.osu.edu/" class="webmail">Webmail</a></li> 
+							<li><a href="http://www.osu.edu/search/" class="search">Search Ohio State</a></li>
+						</ul>
+					</div><!-- /links -->
+				</div><!-- /univ_links -->
+			</div><!-- /container -->
+	</div><!-- /osu_navbar -->
 
 	<div id="header">
 		<div class="container">
@@ -50,12 +71,12 @@
 		<div id="footer-container">
 			<div class="container">
 				<?php if(true || !$is_front){ ?>
-  				<div id="ascbannerbottom">
-  				  <a href="http://artsandsciences.osu.edu/" id="aslink-2" title="Click here to visit the Arts and Sciences homepage">
-  				    <img src="/sites/asccomm.osu.edu/themes/asccomm/images/banner2.png" alt="Arts and Sciences Icon.">
-  				  </a>
-  				</div>
-  			<? } ?>
+					<div id="ascbannerbottom">
+						<a href="http://artsandsciences.osu.edu/" id="aslink-2" title="Click here to visit the Arts and Sciences homepage">
+							<img src="/sites/asccomm.osu.edu/themes/asccomm/images/banner2.png" alt="Arts and Sciences Icon.">
+						</a>
+					</div>
+				<? } ?>
 				<div id="footer-left" class="span-6 append-2">
 					<?php if(user_access('administer site configuration')){ ?>
 					<ul class="tabs primary">
