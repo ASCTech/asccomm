@@ -1,0 +1,23 @@
+name = ASC Comm
+description = Arts and Sciences Communications Services Theme
+core = 6.x
+engine = phptemplate
+
+scripts[] = clearsearch.js
+
+stylesheets[all][] = styles/osu-navbar-media/css/navbar.css
+stylesheets[screen, projection][] = styles/blueprint/screen.css
+stylesheets[screen][] = styles/default.css
+stylesheets[all][] = styles/navbar.css
+
+regions[front_header] = front page header text
+regions[front_image] = front page header image
+regions[right_col] = right sidebar
+regions[below_img_left] = below front page image to the left
+regions[below_img_right] = below front page image to the right
+regions[before_content] = before content
+regions[after_content] = after content
+regions[MainNav] = main navigation
+regions[drupalnav] = drupal navigation
+regions[footer_icons] = footer icons
+regions[footer_search] = footer search
